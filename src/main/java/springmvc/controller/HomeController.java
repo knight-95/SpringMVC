@@ -5,12 +5,14 @@ import java.util.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
+@RequestMapping("/first")
 public class HomeController {
 
-	@RequestMapping("/home")
+	@RequestMapping(path="/home" , method=RequestMethod.GET)
 	public String home(Model model) {
 		System.out.println("Calling home");
 		model.addAttribute("name", "Yash Gupta");
