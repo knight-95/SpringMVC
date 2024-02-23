@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-   <%@page isELIgnored="false" %>
+	pageEncoding="ISO-8859-1"%>
+<%@page isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +8,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
-	<h1>Your email address is ${email }</h1>
-	<h1>Your password is ${password }</h1>
-	<h1>Your username is ${username }</h1>
-	
+	<h3>${Header }</h3>
+	<h4>${description }</h4>
+	<hr>
+	<h1>Your email address is ${user.email }</h1>
+	<h1>Your password is ${user.password }</h1>
+	<h1>Your username is ${user.username }</h1>
+
 </body>
 </html>

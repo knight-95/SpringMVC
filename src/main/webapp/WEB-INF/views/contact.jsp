@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@page isELIgnored="false" %>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -22,7 +24,8 @@
 
 <div class="container mt-5">
 
-	<h3 class="text-center">Registration Form</h3>
+	<h3 class="text-center">Registration Form ${Header}</h3>
+	<h4 class="text-center">${description}</h4>
 	<a></a>
 	<form action="processform" method="post">
 		<div class="form-group">
@@ -40,7 +43,8 @@
 
 		<div class="form-group">
 			<label for="userPassword">Password</label> <input type="password"
-				class="form-control" id="userPassword" placeholder="Password" name="password">
+				class="form-control" id="userPassword" placeholder="Password"
+				name="password">
 		</div>
 		<!-- <div class="form-check">
 			<input type="checkbox" class="form-check-input" id="exampleCheck1">
