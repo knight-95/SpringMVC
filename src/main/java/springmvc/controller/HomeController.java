@@ -39,9 +39,19 @@ public class HomeController {
 		modelAndView.addObject("name", "Uttam gupyts");
 		modelAndView.addObject("rollNumber", 12034);
 
-		//setting the view name
+		// setting the view name
 		modelAndView.setViewName("help");
-		
+
+		// sending a list
+		ArrayList<Integer> list = new ArrayList<>();
+		list.add(1);
+		list.add(15);
+		list.add(14);
+		list.add(1443);
+		list.add(1657);
+
+		modelAndView.addObject("marks", list);
+
 		System.out.println("This is help controller");
 		return modelAndView;
 	}
